@@ -30,9 +30,9 @@
 
 /* Function prototypes */
 	void	getTemp();
-	float	getTherTemp(uint8_t);
-	float	getBaroTemp(uint8_t);
-	float	getRTCTemp(uint8_t);
+	float	getTherTemp(const uint8_t addr);
+	float	getBaroTemp(const uint8_t addr);
+	float	getRTCTemp(const uint8_t addr);
 
 int main(void){
 	/* Infinite loop */
