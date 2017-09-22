@@ -5,8 +5,8 @@
 **
 **===========================================================================
 */
-#include "stm32f4xx.h"
 
+/// START DEFINITIONS
 /* Constants */
 	/* Number of sensors */
 	const uint8_t NB_THER 	 = 2,	/* Number of DS1624 digital thermometers */
@@ -26,14 +26,29 @@
 	const uint8_t NB_TOT_THER = NB_THER + NB_BARO + NB_RTC;	/* The barometers and the RTC also have accessible temp sensors */
 
 /* Variables */
-	float therReadings[NB_TOT_THER];
+	float	therReadings[NB_TOT_THER];
+	float	pwrReadings[NB_PWR_IN + NB_PWR_3V3];
+	//datatype for RTC?
 
 /* Function prototypes */
+	/* Temperature-related functions */
 	void	getTemp();
 	float	getTherTemp(const uint8_t addr);
 	float	getBaroTemp(const uint8_t addr);
 	float	getRTCTemp(const uint8_t addr);
+	
+	/* Power-related functions */
+	void	getPwr();
+	float	getINAPwr(const uint8_t addr);
+	void	setINA(const uint8_t addr, int values[]);	//not sure about the datatype that is supposed to be passed for values
+	
+	/* Time-related functions */
+	void	getTime();
+	float	getDS3232Time(const uint8_t addr);
+	void	setDS3232(const uint8_t addr, uint8_t memLoc, int value);	//not sure about the datatypes that are supposed to be passed for memLoc and value
 
+/// END DEFINITIONS
+	
 int main(void){
 	/* Infinite loop */
 	while (1){
@@ -41,7 +56,7 @@ int main(void){
 	}
 }
 
-void getTemp(){
+void getTemp(){		/* All results get stored into one array */
 	uint8_t i = 0;	/* Shared index for the following loops */
 
 	/* Get temperature from DS1624 */
@@ -58,4 +73,5 @@ void getTemp(){
 	for(i; i < NB_TOT_THER; i++){
 		therReadings[i] = getRTCTime(RTC_ADDR[i-NB_THER-NB_BARO]);
 	}
+	return;
 }
