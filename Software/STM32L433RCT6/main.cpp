@@ -21,7 +21,7 @@
 				  PWR_IN_ADDR[NB_PWR_IN]	= {0x80,0x82},	/* I2C addresses for the INA219 power sensors tied to the input/battery voltage bus */
 				  PWR_3V3_ADDR[NB_PWR_3V3] 	= {0x88,0x8A},	/* I2C addresses for the INA219 power sensors tied to the 3V3 bus */
 				  RTC_ADDR[NB_RTC] 			= {0xD0};		/* I2C address for the DS3232 RTC */
-	
+
 	/* Misc constants */
 	const uint8_t NB_TOT_THER = NB_THER + NB_BARO + NB_RTC;	/* The barometers and the RTC also have accessible temp sensors */
 
@@ -36,23 +36,25 @@
 	float	getTherTemp(const uint8_t addr);
 	float	getBaroTemp(const uint8_t addr);
 	float	getRTCTemp(const uint8_t addr);
-	
+
 	/* Power-related functions */
 	void	getPwr();
 	float	getINAPwr(const uint8_t addr);
 	void	setINA(const uint8_t addr, int values[]);	//not sure about the datatype that is supposed to be passed for values
-	
+
 	/* Time-related functions */
 	void	getTime();
 	float	getDS3232Time(const uint8_t addr);
 	void	setDS3232(const uint8_t addr, uint8_t memLoc, int value);	//not sure about the datatypes that are supposed to be passed for memLoc and value
 
 /// END DEFINITIONS
-	
+
 int main(void){
 	/* Infinite loop */
 	while (1){
-
+        getTemp();
+        getPwr();
+        getTemp();
 	}
 }
 
@@ -74,4 +76,40 @@ void getTemp(){		/* All results get stored into one array */
 		therReadings[i] = getRTCTime(RTC_ADDR[i-NB_THER-NB_BARO]);
 	}
 	return;
+}
+
+float getTherTemp(const uint8_t addr){
+
+}
+
+float getBaroTemp(const uint8_t addr){
+
+}
+
+float getRTCTemp(const uint8_t addr){
+
+}
+
+void getPwr(){
+
+}
+
+float getINAPwr(const uint8_t addr){
+
+}
+
+void setINA(const uint8_t addr, int values[]){
+
+}
+
+void getTime(){
+
+}
+
+float getDS3232Time(const uint8_t addr){
+
+}
+
+void setDS3232(const uint8_t addr, uint8_t memLoc, int value){
+
 }
