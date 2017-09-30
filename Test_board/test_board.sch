@@ -109,23 +109,12 @@ $EndSheet
 $Comp
 L USB_A-RESCUE-test_board J5
 U 1 1 5995E3C3
-P 10300 1200
-F 0 "J5" H 10100 1650 50  0000 L CNN
-F 1 "USB_A" H 10100 1550 50  0000 L CNN
-F 2 "aleksandr_footprints:USB_A_Board" H 10450 1150 50  0001 C CNN
-F 3 "" H 10450 1150 50  0001 C CNN
-	1    10300 1200
-	-1   0    0    1   
-$EndComp
-$Comp
-L USB_A-RESCUE-test_board J7
-U 1 1 5995E4B2
-P 10300 3200
-F 0 "J7" H 10100 3650 50  0000 L CNN
-F 1 "USB_A" H 10100 3550 50  0000 L CNN
-F 2 "aleksandr_footprints:USB_A_Board" H 10450 3150 50  0001 C CNN
-F 3 "" H 10450 3150 50  0001 C CNN
-	1    10300 3200
+P 10350 3000
+F 0 "J5" H 10150 3450 50  0000 L CNN
+F 1 "USB_A" H 10150 3350 50  0000 L CNN
+F 2 "aleksandr_footprints:USB_A_Board" H 10500 2950 50  0001 C CNN
+F 3 "" H 10500 2950 50  0001 C CNN
+	1    10350 3000
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -175,23 +164,12 @@ $EndComp
 $Comp
 L GND #PWR05
 U 1 1 5995FB3E
-P 10050 800
-F 0 "#PWR05" H 10050 550 50  0001 C CNN
-F 1 "GND" H 10050 650 50  0000 C CNN
-F 2 "" H 10050 800 50  0001 C CNN
-F 3 "" H 10050 800 50  0001 C CNN
-	1    10050 800 
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR07
-U 1 1 5995FB7C
-P 10050 2800
-F 0 "#PWR07" H 10050 2550 50  0001 C CNN
-F 1 "GND" H 10050 2650 50  0000 C CNN
-F 2 "" H 10050 2800 50  0001 C CNN
-F 3 "" H 10050 2800 50  0001 C CNN
-	1    10050 2800
+P 10100 2600
+F 0 "#PWR05" H 10100 2350 50  0001 C CNN
+F 1 "GND" H 10100 2450 50  0000 C CNN
+F 2 "" H 10100 2600 50  0001 C CNN
+F 3 "" H 10100 2600 50  0001 C CNN
+	1    10100 2600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -290,8 +268,6 @@ Text Label 4750 3900 2    60   ~ 0
 Serial0_MOSI
 Text Label 7550 3900 0    60   ~ 0
 Serial0_MISO
-Text Label 4750 3400 2    60   ~ 0
-PIC_RST
 $Comp
 L MAX16056 U1
 U 1 1 59A74619
@@ -389,10 +365,10 @@ Wire Wire Line
 	6900 2800 7550 2800
 Connection ~ 7050 2800
 Wire Wire Line
-	6900 2900 9250 2900
+	6900 2900 10050 2900
 Connection ~ 7050 2900
 Wire Wire Line
-	6900 3000 9350 3000
+	6900 3000 10050 3000
 Connection ~ 7050 3000
 Wire Wire Line
 	6900 3100 7550 3100
@@ -408,11 +384,7 @@ Wire Wire Line
 Connection ~ 7050 3400
 Connection ~ 7050 3500
 Connection ~ 7050 3600
-Wire Wire Line
-	6900 3700 9650 3700
 Connection ~ 7050 3700
-Wire Wire Line
-	6900 3800 9750 3800
 Connection ~ 7050 3800
 Wire Wire Line
 	6900 3900 7550 3900
@@ -503,44 +475,21 @@ Wire Wire Line
 Connection ~ 5250 4700
 Connection ~ 7550 3300
 Connection ~ 7550 3400
-Wire Wire Line
-	9250 2900 9250 1100
-Wire Wire Line
-	9250 1100 10000 1100
 Connection ~ 7550 2900
-Wire Wire Line
-	10000 1200 9350 1200
-Wire Wire Line
-	9350 1200 9350 3000
 Connection ~ 7550 3000
 Connection ~ 7550 3500
 Connection ~ 7550 3600
-Wire Wire Line
-	9650 3700 9650 3100
-Wire Wire Line
-	9650 3100 10000 3100
 Connection ~ 7550 3700
-Wire Wire Line
-	9750 3800 9750 3200
-Wire Wire Line
-	9750 3200 10000 3200
 Connection ~ 7550 3800
 Wire Wire Line
-	10050 800  10400 800 
+	10100 2600 10450 2600
 Wire Wire Line
-	10050 2800 10400 2800
-Wire Wire Line
-	10000 3500 10000 3400
-Wire Wire Line
-	9850 3500 10000 3500
-Wire Wire Line
-	9800 1400 10000 1400
+	9850 3200 10050 3200
 Wire Wire Line
 	6100 7500 6100 7400
 Wire Wire Line
 	6500 7500 6500 7400
-Connection ~ 10300 800 
-Connection ~ 10300 2800
+Connection ~ 10350 2600
 Wire Wire Line
 	10000 5100 7000 5100
 Wire Wire Line
@@ -712,30 +661,16 @@ Wire Wire Line
 Connection ~ 6400 5600
 Text Notes 7700 5450 0    60   ~ 0
 Serial comms with standard DB9 connector\n
-Wire Notes Line
-	9000 600  9000 3950
-Wire Notes Line
-	9000 3950 10650 3950
-Wire Notes Line
-	10650 3950 10650 600 
-Wire Notes Line
-	10650 600  9000 600 
-Text Notes 9100 600  0    60   ~ 0
-x2 USB A (Arietta G25 as host)\n
 Text GLabel 4500 4400 0    60   Input ~ 0
 Heater1
 Text GLabel 4500 4300 0    60   Input ~ 0
 Heater2
 Connection ~ 4750 4300
 Connection ~ 4750 4400
-Text Label 9500 1100 0    60   ~ 0
+Text Label 9550 2900 0    60   ~ 0
 USBA_D-
-Text Label 9500 1200 0    60   ~ 0
+Text Label 9550 3000 0    60   ~ 0
 USBA_D+
-Text Label 9700 3100 1    60   ~ 0
-USBC_D-
-Text Label 9800 3200 1    60   ~ 0
-USBC_D+
 Text Label 7250 5100 0    60   ~ 0
 DB_TX
 Text Label 7250 5300 0    60   ~ 0
@@ -757,23 +692,12 @@ Connection ~ 5900 5500
 $Comp
 L VCC #PWR?
 U 1 1 59B5D45E
-P 9800 1400
-F 0 "#PWR?" H 9800 1250 50  0001 C CNN
-F 1 "VCC" H 9800 1550 50  0000 C CNN
-F 2 "" H 9800 1400 50  0001 C CNN
-F 3 "" H 9800 1400 50  0001 C CNN
-	1    9800 1400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L VCC #PWR?
-U 1 1 59B5D50C
-P 9850 3500
-F 0 "#PWR?" H 9850 3350 50  0001 C CNN
-F 1 "VCC" H 9850 3650 50  0000 C CNN
-F 2 "" H 9850 3500 50  0001 C CNN
-F 3 "" H 9850 3500 50  0001 C CNN
-	1    9850 3500
+P 9850 3200
+F 0 "#PWR?" H 9850 3050 50  0001 C CNN
+F 1 "VCC" H 9850 3350 50  0000 C CNN
+F 2 "" H 9850 3200 50  0001 C CNN
+F 3 "" H 9850 3200 50  0001 C CNN
+	1    9850 3200
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
