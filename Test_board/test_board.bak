@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:Computation
 LIBS:Sensors
+LIBS:Aleksandr
 LIBS:test_board-cache
 EELAYER 25 0
 EELAYER END
@@ -1066,9 +1067,9 @@ Wire Wire Line
 Wire Wire Line
 	3150 4850 3150 4950
 Wire Wire Line
-	3200 5650 2700 5650
+	1950 5650 3200 5650
 Wire Wire Line
-	3200 5750 2700 5750
+	1950 5750 3200 5750
 Wire Wire Line
 	3200 5950 2700 5950
 Wire Wire Line
@@ -1203,9 +1204,9 @@ Text Label 2700 5950 2    60   ~ 0
 SWCLK
 Text Label 2700 5850 2    60   ~ 0
 SWDIO
-Text Label 2700 5750 2    60   ~ 0
+Text Label 3100 5750 2    60   ~ 0
 CAN_TX
-Text Label 2700 5650 2    60   ~ 0
+Text Label 3100 5650 2    60   ~ 0
 CAN_RX
 Text Label 2700 5250 2    60   ~ 0
 ARM_SPI_MOSI
@@ -1225,4 +1226,40 @@ Text Label 9550 3150 0    60   ~ 0
 SCL0
 Text Label 9550 3550 0    60   ~ 0
 SDA0
+Wire Wire Line
+	1950 5850 1950 5750
+$Comp
+L R R?
+U 1 1 59D55092
+P 1800 5700
+F 0 "R?" V 1880 5700 50  0000 C CNN
+F 1 "R" V 1800 5700 50  0000 C CNN
+F 2 "" V 1730 5700 50  0000 C CNN
+F 3 "" H 1800 5700 50  0000 C CNN
+	1    1800 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5550 1950 5650
+$Comp
+L CONN_01X02 P?
+U 1 1 59D554E8
+P 1450 5700
+F 0 "P?" H 1450 5850 50  0000 C CNN
+F 1 "CONN_01X02" V 1550 5700 50  0000 C CNN
+F 2 "" H 1450 5700 50  0000 C CNN
+F 3 "" H 1450 5700 50  0000 C CNN
+	1    1450 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 5650 1650 5550
+Connection ~ 1800 5550
+Wire Wire Line
+	1650 5750 1650 5850
+Connection ~ 1800 5850
+Wire Wire Line
+	1650 5550 1950 5550
+Wire Wire Line
+	1650 5850 1950 5850
 $EndSCHEMATC

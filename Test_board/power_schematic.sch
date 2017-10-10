@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:Computation
 LIBS:Sensors
+LIBS:Aleksandr
 LIBS:test_board-cache
 EELAYER 25 0
 EELAYER END
@@ -485,12 +486,12 @@ $EndComp
 $Comp
 L VCC #PWR047
 U 1 1 59AC8C79
-P 7200 1200
-F 0 "#PWR047" H 7200 1050 50  0001 C CNN
-F 1 "VCC" H 7200 1350 50  0000 C CNN
-F 2 "" H 7200 1200 50  0001 C CNN
-F 3 "" H 7200 1200 50  0001 C CNN
-	1    7200 1200
+P 7000 1250
+F 0 "#PWR047" H 7000 1100 50  0001 C CNN
+F 1 "VCC" H 7000 1400 50  0000 C CNN
+F 2 "" H 7000 1250 50  0001 C CNN
+F 3 "" H 7000 1250 50  0001 C CNN
+	1    7000 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -518,72 +519,6 @@ $EndComp
 Text Label 6250 1550 3    60   ~ 0
 GNDP
 $Comp
-L TPS63000 U6
-U 1 1 59AC3B68
-P 7850 1450
-F 0 "U6" H 7600 1050 60  0000 C CNN
-F 1 "TPS63000" H 7850 1950 60  0000 C CNN
-F 2 "Housings_DFN_QFN:DFN-10-1EP_3x3mm_Pitch0.5mm" H 7850 1450 60  0001 C CNN
-F 3 "" H 7850 1450 60  0001 C CNN
-	1    7850 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L L L3
-U 1 1 59AC41AC
-P 7850 800
-F 0 "L3" V 7800 800 50  0000 C CNN
-F 1 "1.5uH" V 7925 800 50  0000 C CNN
-F 2 "aleksandr_footprints:SMD-1008" H 7850 800 50  0001 C CNN
-F 3 "" H 7850 800 50  0001 C CNN
-	1    7850 800 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R33
-U 1 1 59AC43DC
-P 8450 1350
-F 0 "R33" V 8530 1350 50  0000 C CNN
-F 1 "1M" V 8450 1350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8380 1350 50  0001 C CNN
-F 3 "" H 8450 1350 50  0001 C CNN
-	1    8450 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R34
-U 1 1 59AC4459
-P 8450 1700
-F 0 "R34" V 8530 1700 50  0000 C CNN
-F 1 "178k" V 8450 1700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8380 1700 50  0001 C CNN
-F 3 "" H 8450 1700 50  0001 C CNN
-	1    8450 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C27
-U 1 1 59AC4860
-P 8850 1400
-F 0 "C27" H 8875 1500 50  0000 L CNN
-F 1 "22uF" H 8875 1300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 8888 1250 50  0001 C CNN
-F 3 "" H 8850 1400 50  0001 C CNN
-	1    8850 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C28
-U 1 1 59AC4F2F
-P 9050 1400
-F 0 "C28" H 9075 1500 50  0000 L CNN
-F 1 "22uF" H 9075 1300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9088 1250 50  0001 C CNN
-F 3 "" H 9050 1400 50  0001 C CNN
-	1    9050 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L VDD #PWR049
 U 1 1 59AC5266
 P 8950 1150
@@ -593,28 +528,6 @@ F 2 "" H 8950 1150 50  0001 C CNN
 F 3 "" H 8950 1150 50  0001 C CNN
 	1    8950 1150
 	1    0    0    -1  
-$EndComp
-$Comp
-L 4.19mmBananaJack J13
-U 1 1 59ADAC70
-P 9700 950
-F 0 "J13" H 9700 800 60  0000 C CNN
-F 1 "4.19mmBananaJack" H 9700 1100 60  0000 C CNN
-F 2 "aleksandr_footprints:4.19Banana" H 9700 950 60  0001 C CNN
-F 3 "" H 9700 950 60  0001 C CNN
-	1    9700 950 
-	0    1    1    0   
-$EndComp
-$Comp
-L 4.19mmBananaJack J14
-U 1 1 59ADAD3B
-P 10150 950
-F 0 "J14" H 10150 800 60  0000 C CNN
-F 1 "4.19mmBananaJack" H 10150 1100 60  0000 C CNN
-F 2 "aleksandr_footprints:4.19Banana" H 10150 950 60  0001 C CNN
-F 3 "" H 10150 950 60  0001 C CNN
-	1    10150 950 
-	0    1    1    0   
 $EndComp
 Text Label 10150 1200 3    60   ~ 0
 GNDP
@@ -644,7 +557,7 @@ Text Notes 2400 2850 0    100  ~ 0
 MPPTs\n
 Text Notes 5800 1950 0    100  ~ 0
 Battery Pack\n
-Text Notes 8050 2200 0    100  ~ 0
+Text Notes 7550 600  0    100  ~ 0
 3V3 Converter\n
 Text Notes 9550 1900 0    100  ~ 0
 External Power Input\nDO NOT USE WITH\nBATTERIES
@@ -850,6 +763,179 @@ F 3 "" H 3600 5200 60  0001 C CNN
 	1    3650 5250
 	1    0    0    -1  
 $EndComp
+$Comp
+L C C32
+U 1 1 59AE5E80
+P 3100 5550
+F 0 "C32" H 3125 5650 50  0000 L CNN
+F 1 "1uF" H 3125 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3138 5400 50  0001 C CNN
+F 3 "" H 3100 5550 50  0001 C CNN
+	1    3100 5550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4100 5300
+$Comp
+L C C30
+U 1 1 59AE67DA
+P 2900 5550
+F 0 "C30" H 2925 5650 50  0000 L CNN
+F 1 "0.1uF" H 2650 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2938 5400 50  0001 C CNN
+F 3 "" H 2900 5550 50  0001 C CNN
+	1    2900 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS22965-Q1 U9
+U 1 1 59AE7680
+P 3700 6900
+F 0 "U9" H 3500 6600 60  0000 C CNN
+F 1 "TPS22965-Q1" H 3700 7200 60  0000 C CNN
+F 2 "Housings_DFN_QFN:DFN-8-1EP_2x2mm_Pitch0.5mm" H 3650 6850 60  0001 C CNN
+F 3 "" H 3650 6850 60  0001 C CNN
+	1    3700 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C33
+U 1 1 59AE768F
+P 3150 7200
+F 0 "C33" H 3175 7300 50  0000 L CNN
+F 1 "1uF" H 3175 7100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3188 7050 50  0001 C CNN
+F 3 "" H 3150 7200 50  0001 C CNN
+	1    3150 7200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4150 6950
+$Comp
+L C C31
+U 1 1 59AE8317
+P 2950 7200
+F 0 "C31" H 2975 7300 50  0000 L CNN
+F 1 "0.1uF" H 2700 7100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2988 7050 50  0001 C CNN
+F 3 "" H 2950 7200 50  0001 C CNN
+	1    2950 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Heater R43
+U 1 1 59AE92BC
+P 5350 7000
+F 0 "R43" V 5430 7000 50  0000 C CNN
+F 1 "HAP6948" V 5270 7000 50  0000 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" V 5280 7000 50  0001 C CNN
+F 3 "" H 5350 7000 50  0001 C CNN
+	1    5350 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Heater R42
+U 1 1 59AE95C1
+P 5050 7000
+F 0 "R42" V 5130 7000 50  0000 C CNN
+F 1 "HAP6948" V 4970 7000 50  0000 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" V 4980 7000 50  0001 C CNN
+F 3 "" H 5050 7000 50  0001 C CNN
+	1    5050 7000
+	1    0    0    -1  
+$EndComp
+Text Notes 650  7750 0    60   ~ 0
+PT103J2 becomes about 21k at 9degC\n
+Text Notes 1900 6200 0    100  ~ 0
+Battery Heaters
+$Comp
+L +BATT #PWR056
+U 1 1 59AEABD5
+P 3150 5050
+F 0 "#PWR056" H 3150 4900 50  0001 C CNN
+F 1 "+BATT" H 3150 5190 50  0000 C CNN
+F 2 "" H 3150 5050 50  0001 C CNN
+F 3 "" H 3150 5050 50  0001 C CNN
+	1    3150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR057
+U 1 1 59AEAD99
+P 3200 6700
+F 0 "#PWR057" H 3200 6550 50  0001 C CNN
+F 1 "+BATT" H 3200 6840 50  0000 C CNN
+F 2 "" H 3200 6700 50  0001 C CNN
+F 3 "" H 3200 6700 50  0001 C CNN
+	1    3200 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR058
+U 1 1 59AEECE6
+P 1250 1300
+F 0 "#PWR058" H 1250 1050 50  0001 C CNN
+F 1 "GND" H 1250 1150 50  0000 C CNN
+F 2 "" H 1250 1300 50  0001 C CNN
+F 3 "" H 1250 1300 50  0001 C CNN
+	1    1250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR059
+U 1 1 59AF8E23
+P 2550 6550
+F 0 "#PWR059" H 2550 6400 50  0001 C CNN
+F 1 "+3V3" H 2550 6690 50  0000 C CNN
+F 2 "" H 2550 6550 50  0001 C CNN
+F 3 "" H 2550 6550 50  0001 C CNN
+	1    2550 6550
+	1    0    0    -1  
+$EndComp
+Text Notes 800  1000 0    60   ~ 0
+Charger IN\n
+Text GLabel 3300 4650 2    60   Output ~ 0
+Heater1
+Text GLabel 3300 6300 2    60   Output ~ 0
+Heater2
+Text Label 5200 7400 3    60   ~ 0
+GNDP
+$Comp
+L USB_OTG J?
+U 1 1 59DBF217
+P 10700 3400
+F 0 "J?" H 10500 3850 50  0000 L CNN
+F 1 "USB_OTG" H 10500 3750 50  0000 L CNN
+F 2 "" H 10850 3350 50  0001 C CNN
+F 3 "" H 10850 3350 50  0001 C CNN
+	1    10700 3400
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 10400 3600
+NoConn ~ 10400 3400
+NoConn ~ 10400 3500
+$Comp
+L +BATT #PWR?
+U 1 1 59DBF4CB
+P 10350 3200
+F 0 "#PWR?" H 10350 3050 50  0001 C CNN
+F 1 "+BATT" H 10350 3340 50  0000 C CNN
+F 2 "" H 10350 3200 50  0001 C CNN
+F 3 "" H 10350 3200 50  0001 C CNN
+	1    10350 3200
+	0    -1   -1   0   
+$EndComp
+Text Label 10800 3800 3    60   ~ 0
+GNDP
+$Comp
+L S6BP203A U?
+U 1 1 59DBFB58
+P 8050 1400
+F 0 "U?" H 8250 900 60  0000 C CNN
+F 1 "S6BP203A" H 8050 1900 60  0000 C CNN
+F 2 "" H 8050 1250 60  0001 C CNN
+F 3 "" H 8050 1250 60  0001 C CNN
+	1    8050 1400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2050 1350 2850 1350
 Connection ~ 2150 1350
@@ -1030,55 +1116,6 @@ Connection ~ 3900 2450
 Wire Wire Line
 	6250 1100 6250 1150
 Wire Wire Line
-	7200 1200 7350 1200
-Wire Wire Line
-	7350 1300 7200 1300
-Wire Wire Line
-	7200 1200 7200 1500
-Wire Wire Line
-	7200 1400 7350 1400
-Connection ~ 7200 1300
-Wire Wire Line
-	7200 1500 7350 1500
-Connection ~ 7200 1400
-Connection ~ 7200 1200
-Wire Wire Line
-	7750 2000 8950 2000
-Connection ~ 7850 2000
-Wire Wire Line
-	7700 800  7350 800 
-Wire Wire Line
-	7350 800  7350 1100
-Wire Wire Line
-	8000 800  8350 800 
-Wire Wire Line
-	8350 800  8350 1100
-Wire Wire Line
-	8350 1200 9050 1200
-Wire Wire Line
-	8350 1500 8450 1500
-Wire Wire Line
-	8450 1500 8450 1550
-Connection ~ 8450 1500
-Wire Wire Line
-	8450 2000 8450 1850
-Connection ~ 7950 2000
-Connection ~ 8450 1200
-Wire Wire Line
-	9050 1200 9050 1250
-Wire Wire Line
-	8850 1200 8850 1250
-Connection ~ 8850 1200
-Wire Wire Line
-	8850 1550 9050 1550
-Wire Wire Line
-	8950 2000 8950 1550
-Connection ~ 8450 2000
-Connection ~ 8950 1550
-Wire Wire Line
-	8950 1150 8950 1200
-Connection ~ 8950 1200
-Wire Wire Line
 	9700 1250 9700 1200
 Wire Wire Line
 	1000 4900 1500 4900
@@ -1147,7 +1184,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 4950 2400 5000
 Wire Wire Line
-	2850 6600 2400 6600
+	2400 6600 2850 6600
 Wire Wire Line
 	2400 6600 2400 6650
 Wire Wire Line
@@ -1162,7 +1199,7 @@ Connection ~ 2850 5300
 Wire Wire Line
 	3200 5100 3150 5100
 Wire Wire Line
-	3150 5050 3150 5400
+	3150 5400 3150 5050
 Wire Wire Line
 	3150 5200 3200 5200
 Wire Wire Line
@@ -1174,77 +1211,31 @@ Wire Wire Line
 	2500 5750 2500 5600
 Wire Wire Line
 	2500 5600 2400 5600
-$Comp
-L C C32
-U 1 1 59AE5E80
-P 3100 5550
-F 0 "C32" H 3125 5650 50  0000 L CNN
-F 1 "1uF" H 3125 5450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3138 5400 50  0001 C CNN
-F 3 "" H 3100 5550 50  0001 C CNN
-	1    3100 5550
-	1    0    0    -1  
-$EndComp
 Connection ~ 3150 5400
 Wire Wire Line
-	3100 5700 3100 5750
+	3100 5750 3100 5700
 Connection ~ 3100 5750
-NoConn ~ 4100 5300
 Wire Wire Line
-	3650 5700 3650 5750
+	3650 5750 3650 5700
 Connection ~ 3650 5750
-$Comp
-L C C30
-U 1 1 59AE67DA
-P 2900 5550
-F 0 "C30" H 2925 5650 50  0000 L CNN
-F 1 "0.1uF" H 2650 5450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2938 5400 50  0001 C CNN
-F 3 "" H 2900 5550 50  0001 C CNN
-	1    2900 5550
-	1    0    0    -1  
-$EndComp
 Connection ~ 3100 5400
 Wire Wire Line
 	2900 5700 2900 5750
 Connection ~ 2900 5750
-$Comp
-L TPS22965-Q1 U9
-U 1 1 59AE7680
-P 3700 6900
-F 0 "U9" H 3500 6600 60  0000 C CNN
-F 1 "TPS22965-Q1" H 3700 7200 60  0000 C CNN
-F 2 "Housings_DFN_QFN:DFN-8-1EP_2x2mm_Pitch0.5mm" H 3650 6850 60  0001 C CNN
-F 3 "" H 3650 6850 60  0001 C CNN
-	1    3700 6900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 6750 3200 6750
 Wire Wire Line
-	3200 6700 3200 7050
+	3200 7050 3200 6700
 Wire Wire Line
 	3200 6850 3250 6850
 Connection ~ 3200 6850
 Wire Wire Line
 	4150 6750 4150 6850
-$Comp
-L C C33
-U 1 1 59AE768F
-P 3150 7200
-F 0 "C33" H 3175 7300 50  0000 L CNN
-F 1 "1uF" H 3175 7100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3188 7050 50  0001 C CNN
-F 3 "" H 3150 7200 50  0001 C CNN
-	1    3150 7200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3150 7350 3150 7400
+	3150 7400 3150 7350
 Connection ~ 3150 7400
-NoConn ~ 4150 6950
 Wire Wire Line
-	3700 7350 3700 7400
+	3700 7400 3700 7350
 Connection ~ 3700 7400
 Wire Wire Line
 	2550 7400 2550 7250
@@ -1253,17 +1244,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 6950 3250 6950
 Connection ~ 2850 6950
-$Comp
-L C C31
-U 1 1 59AE8317
-P 2950 7200
-F 0 "C31" H 2975 7300 50  0000 L CNN
-F 1 "0.1uF" H 2700 7100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2988 7050 50  0001 C CNN
-F 3 "" H 2950 7200 50  0001 C CNN
-	1    2950 7200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 7050 3250 7050
 Connection ~ 3150 7050
@@ -1271,93 +1251,15 @@ Connection ~ 3200 7050
 Wire Wire Line
 	2950 7350 2950 7400
 Connection ~ 2950 7400
-$Comp
-L Heater R43
-U 1 1 59AE92BC
-P 5350 7000
-F 0 "R43" V 5430 7000 50  0000 C CNN
-F 1 "HAP6948" V 5270 7000 50  0000 C CNN
-F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" V 5280 7000 50  0001 C CNN
-F 3 "" H 5350 7000 50  0001 C CNN
-	1    5350 7000
-	1    0    0    -1  
-$EndComp
 Connection ~ 4100 5150
-$Comp
-L Heater R42
-U 1 1 59AE95C1
-P 5050 7000
-F 0 "R42" V 5130 7000 50  0000 C CNN
-F 1 "HAP6948" V 4970 7000 50  0000 C CNN
-F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" V 4980 7000 50  0001 C CNN
-F 3 "" H 5050 7000 50  0001 C CNN
-	1    5050 7000
-	1    0    0    -1  
-$EndComp
 Connection ~ 4150 6800
-Text Notes 650  7750 0    60   ~ 0
-PT103J2 becomes about 21k at 9degC\n
-Text Notes 1900 6200 0    100  ~ 0
-Battery Heaters
-$Comp
-L +BATT #PWR056
-U 1 1 59AEABD5
-P 3150 5050
-F 0 "#PWR056" H 3150 4900 50  0001 C CNN
-F 1 "+BATT" H 3150 5190 50  0000 C CNN
-F 2 "" H 3150 5050 50  0001 C CNN
-F 3 "" H 3150 5050 50  0001 C CNN
-	1    3150 5050
-	1    0    0    -1  
-$EndComp
 Connection ~ 3150 5100
-$Comp
-L +BATT #PWR057
-U 1 1 59AEAD99
-P 3200 6700
-F 0 "#PWR057" H 3200 6550 50  0001 C CNN
-F 1 "+BATT" H 3200 6840 50  0000 C CNN
-F 2 "" H 3200 6700 50  0001 C CNN
-F 3 "" H 3200 6700 50  0001 C CNN
-	1    3200 6700
-	1    0    0    -1  
-$EndComp
 Connection ~ 3200 6750
-$Comp
-L GND #PWR058
-U 1 1 59AEECE6
-P 1250 1300
-F 0 "#PWR058" H 1250 1050 50  0001 C CNN
-F 1 "GND" H 1250 1150 50  0000 C CNN
-F 2 "" H 1250 1300 50  0001 C CNN
-F 3 "" H 1250 1300 50  0001 C CNN
-	1    1250 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1250 1300 1250 1250
-$Comp
-L +3V3 #PWR059
-U 1 1 59AF8E23
-P 2550 6550
-F 0 "#PWR059" H 2550 6400 50  0001 C CNN
-F 1 "+3V3" H 2550 6690 50  0000 C CNN
-F 2 "" H 2550 6550 50  0001 C CNN
-F 3 "" H 2550 6550 50  0001 C CNN
-	1    2550 6550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 6550 2550 6600
 Connection ~ 2550 6600
-Text Label 7750 2000 3    50   ~ 0
-GNDP
-Text Notes 800  1000 0    60   ~ 0
-Charger IN\n
-Text GLabel 3300 4650 2    60   Output ~ 0
-Heater1
-Text GLabel 3300 6300 2    60   Output ~ 0
-Heater2
 Wire Wire Line
 	3300 6300 3000 6300
 Wire Wire Line
@@ -1369,7 +1271,7 @@ Wire Wire Line
 	3000 4650 3000 5300
 Connection ~ 3000 5300
 Wire Wire Line
-	5350 6850 5050 6850
+	5050 6850 5350 6850
 Wire Wire Line
 	5200 5150 5200 6850
 Wire Wire Line
@@ -1387,8 +1289,6 @@ Connection ~ 5200 6500
 Wire Wire Line
 	5200 7150 5200 7400
 Connection ~ 5200 7150
-Text Label 5200 7400 3    60   ~ 0
-GNDP
 Wire Wire Line
 	4150 7400 4150 7050
 Wire Wire Line
@@ -1397,4 +1297,133 @@ Wire Wire Line
 	4100 5750 4100 5400
 Wire Wire Line
 	2500 5750 4100 5750
+Wire Wire Line
+	10800 3800 10700 3800
+Wire Wire Line
+	10350 3200 10400 3200
+Wire Wire Line
+	7000 1250 7550 1250
+Wire Wire Line
+	7550 1350 7500 1350
+Wire Wire Line
+	7500 1350 7500 1250
+Connection ~ 7500 1250
+$Comp
+L L L?
+U 1 1 59DC0813
+P 8050 800
+F 0 "L?" V 8100 650 50  0000 C CNN
+F 1 "L" V 8125 800 50  0000 C CNN
+F 2 "" H 8050 800 50  0001 C CNN
+F 3 "" H 8050 800 50  0001 C CNN
+	1    8050 800 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 800  7900 800 
+Wire Wire Line
+	7500 800  7500 1050
+Wire Wire Line
+	7500 1050 7550 1050
+Wire Wire Line
+	8200 800  8600 800 
+Wire Wire Line
+	8600 800  8600 1050
+Wire Wire Line
+	8600 1050 8550 1050
+$Comp
+L C C?
+U 1 1 59DC12D3
+P 7350 1150
+F 0 "C?" H 7375 1250 50  0000 L CNN
+F 1 "C" H 7375 1050 50  0000 L CNN
+F 2 "" H 7388 1000 50  0001 C CNN
+F 3 "" H 7350 1150 50  0001 C CNN
+	1    7350 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 1150 7550 1150
+Wire Wire Line
+	7200 1150 7200 800 
+Connection ~ 7500 800 
+Wire Wire Line
+	7550 1650 7500 1650
+Wire Wire Line
+	7500 1550 7500 2050
+Wire Wire Line
+	7500 1750 7550 1750
+Wire Wire Line
+	8900 2050 7500 2050
+Connection ~ 7500 1750
+Wire Wire Line
+	8550 2050 8550 1750
+Connection ~ 8050 2050
+Wire Wire Line
+	8550 1150 8950 1150
+Wire Wire Line
+	8550 1250 8600 1250
+Wire Wire Line
+	8600 1250 8600 1150
+Connection ~ 8600 1150
+$Comp
+L R R?
+U 1 1 59DC1D9B
+P 8750 1650
+F 0 "R?" V 8830 1650 50  0000 C CNN
+F 1 "R" V 8750 1650 50  0000 C CNN
+F 2 "" V 8680 1650 50  0001 C CNN
+F 3 "" H 8750 1650 50  0001 C CNN
+	1    8750 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 1650 8550 1650
+Wire Wire Line
+	8900 1450 8900 2050
+Connection ~ 8550 2050
+$Comp
+L R R?
+U 1 1 59DC2107
+P 8750 1350
+F 0 "R?" V 8800 1500 50  0000 C CNN
+F 1 "R" V 8750 1350 50  0000 C CNN
+F 2 "" V 8680 1350 50  0001 C CNN
+F 3 "" H 8750 1350 50  0001 C CNN
+	1    8750 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 1350 8550 1350
+Wire Wire Line
+	8900 1350 8900 1150
+Connection ~ 8900 1150
+Wire Wire Line
+	7550 1550 7500 1550
+Connection ~ 7500 1650
+Wire Wire Line
+	8550 1450 8900 1450
+Connection ~ 8900 1650
+$Comp
+L 4.19mmBananaJack J?
+U 1 1 59DC400B
+P 9700 950
+F 0 "J?" H 9700 800 60  0000 C CNN
+F 1 "4.19mmBananaJack" H 9700 1100 60  0000 C CNN
+F 2 "" H 9700 950 60  0001 C CNN
+F 3 "" H 9700 950 60  0001 C CNN
+	1    9700 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L 4.19mmBananaJack J?
+U 1 1 59DC40B4
+P 10150 950
+F 0 "J?" H 10150 800 60  0000 C CNN
+F 1 "4.19mmBananaJack" H 10150 1100 60  0000 C CNN
+F 2 "" H 10150 950 60  0001 C CNN
+F 3 "" H 10150 950 60  0001 C CNN
+	1    10150 950 
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

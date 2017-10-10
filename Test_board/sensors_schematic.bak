@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:Computation
 LIBS:Sensors
+LIBS:Aleksandr
 LIBS:test_board-cache
 EELAYER 25 0
 EELAYER END
