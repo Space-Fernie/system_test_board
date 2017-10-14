@@ -1354,7 +1354,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 1750 7550 1750
 Wire Wire Line
-	8900 2050 7500 2050
+	7500 2050 8900 2050
 Connection ~ 7500 1750
 Wire Wire Line
 	8550 2050 8550 1750
@@ -1380,7 +1380,7 @@ $EndComp
 Wire Wire Line
 	8600 1650 8550 1650
 Wire Wire Line
-	8900 1450 8900 2050
+	8900 2050 8900 1450
 Connection ~ 8550 2050
 $Comp
 L R R?
@@ -1402,7 +1402,7 @@ Wire Wire Line
 	7550 1550 7500 1550
 Connection ~ 7500 1650
 Wire Wire Line
-	8550 1450 8900 1450
+	8900 1450 8550 1450
 Connection ~ 8900 1650
 $Comp
 L 4.19mmBananaJack J?
@@ -1426,4 +1426,6 @@ F 3 "" H 10150 950 60  0001 C CNN
 	1    10150 950 
 	0    1    1    0   
 $EndComp
+Text Label 8050 2050 3    60   ~ 0
+GNDP
 $EndSCHEMATC

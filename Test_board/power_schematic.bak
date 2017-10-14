@@ -486,13 +486,13 @@ $EndComp
 $Comp
 L VCC #PWR047
 U 1 1 59AC8C79
-P 7200 1250
-F 0 "#PWR047" H 7200 1100 50  0001 C CNN
-F 1 "VCC" H 7200 1400 50  0000 C CNN
-F 2 "" H 7200 1250 50  0001 C CNN
-F 3 "" H 7200 1250 50  0001 C CNN
-	1    7200 1250
-	0    -1   -1   0   
+P 7000 1250
+F 0 "#PWR047" H 7000 1100 50  0001 C CNN
+F 1 "VCC" H 7000 1400 50  0000 C CNN
+F 2 "" H 7000 1250 50  0001 C CNN
+F 3 "" H 7000 1250 50  0001 C CNN
+	1    7000 1250
+	1    0    0    -1  
 $EndComp
 $Comp
 L Battery BT1
@@ -529,28 +529,6 @@ F 3 "" H 8950 1150 50  0001 C CNN
 	1    8950 1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L 4.19mmBananaJack J13
-U 1 1 59ADAC70
-P 9700 950
-F 0 "J13" H 9700 800 60  0000 C CNN
-F 1 "4.19mmBananaJack" H 9700 1100 60  0000 C CNN
-F 2 "aleksandr_footprints:4.19Banana" H 9700 950 60  0001 C CNN
-F 3 "" H 9700 950 60  0001 C CNN
-	1    9700 950 
-	0    1    1    0   
-$EndComp
-$Comp
-L 4.19mmBananaJack J14
-U 1 1 59ADAD3B
-P 10150 950
-F 0 "J14" H 10150 800 60  0000 C CNN
-F 1 "4.19mmBananaJack" H 10150 1100 60  0000 C CNN
-F 2 "aleksandr_footprints:4.19Banana" H 10150 950 60  0001 C CNN
-F 3 "" H 10150 950 60  0001 C CNN
-	1    10150 950 
-	0    1    1    0   
-$EndComp
 Text Label 10150 1200 3    60   ~ 0
 GNDP
 $Comp
@@ -579,7 +557,7 @@ Text Notes 2400 2850 0    100  ~ 0
 MPPTs\n
 Text Notes 5800 1950 0    100  ~ 0
 Battery Pack\n
-Text Notes 6600 700  0    100  ~ 0
+Text Notes 7550 600  0    100  ~ 0
 3V3 Converter\n
 Text Notes 9550 1900 0    100  ~ 0
 External Power Input\nDO NOT USE WITH\nBATTERIES
@@ -1206,7 +1184,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 4950 2400 5000
 Wire Wire Line
-	2850 6600 2400 6600
+	2400 6600 2850 6600
 Wire Wire Line
 	2400 6600 2400 6650
 Wire Wire Line
@@ -1221,7 +1199,7 @@ Connection ~ 2850 5300
 Wire Wire Line
 	3200 5100 3150 5100
 Wire Wire Line
-	3150 5050 3150 5400
+	3150 5400 3150 5050
 Wire Wire Line
 	3150 5200 3200 5200
 Wire Wire Line
@@ -1235,10 +1213,10 @@ Wire Wire Line
 	2500 5600 2400 5600
 Connection ~ 3150 5400
 Wire Wire Line
-	3100 5700 3100 5750
+	3100 5750 3100 5700
 Connection ~ 3100 5750
 Wire Wire Line
-	3650 5700 3650 5750
+	3650 5750 3650 5700
 Connection ~ 3650 5750
 Connection ~ 3100 5400
 Wire Wire Line
@@ -1247,17 +1225,17 @@ Connection ~ 2900 5750
 Wire Wire Line
 	3250 6750 3200 6750
 Wire Wire Line
-	3200 6700 3200 7050
+	3200 7050 3200 6700
 Wire Wire Line
 	3200 6850 3250 6850
 Connection ~ 3200 6850
 Wire Wire Line
 	4150 6750 4150 6850
 Wire Wire Line
-	3150 7350 3150 7400
+	3150 7400 3150 7350
 Connection ~ 3150 7400
 Wire Wire Line
-	3700 7350 3700 7400
+	3700 7400 3700 7350
 Connection ~ 3700 7400
 Wire Wire Line
 	2550 7400 2550 7250
@@ -1293,7 +1271,7 @@ Wire Wire Line
 	3000 4650 3000 5300
 Connection ~ 3000 5300
 Wire Wire Line
-	5350 6850 5050 6850
+	5050 6850 5350 6850
 Wire Wire Line
 	5200 5150 5200 6850
 Wire Wire Line
@@ -1324,7 +1302,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 3200 10400 3200
 Wire Wire Line
-	7200 1250 7550 1250
+	7000 1250 7550 1250
 Wire Wire Line
 	7550 1350 7500 1350
 Wire Wire Line
@@ -1333,24 +1311,119 @@ Connection ~ 7500 1250
 $Comp
 L L L?
 U 1 1 59DC0813
-P 8050 850
-F 0 "L?" V 8100 700 50  0000 C CNN
-F 1 "L" V 8125 850 50  0000 C CNN
-F 2 "" H 8050 850 50  0001 C CNN
-F 3 "" H 8050 850 50  0001 C CNN
-	1    8050 850 
+P 8050 800
+F 0 "L?" V 8100 650 50  0000 C CNN
+F 1 "L" V 8125 800 50  0000 C CNN
+F 2 "" H 8050 800 50  0001 C CNN
+F 3 "" H 8050 800 50  0001 C CNN
+	1    8050 800 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7900 850  7500 850 
+	7200 800  7900 800 
 Wire Wire Line
-	7500 850  7500 1050
+	7500 800  7500 1050
 Wire Wire Line
 	7500 1050 7550 1050
 Wire Wire Line
-	8200 850  8600 850 
+	8200 800  8600 800 
 Wire Wire Line
-	8600 850  8600 1050
+	8600 800  8600 1050
 Wire Wire Line
 	8600 1050 8550 1050
+$Comp
+L C C?
+U 1 1 59DC12D3
+P 7350 1150
+F 0 "C?" H 7375 1250 50  0000 L CNN
+F 1 "C" H 7375 1050 50  0000 L CNN
+F 2 "" H 7388 1000 50  0001 C CNN
+F 3 "" H 7350 1150 50  0001 C CNN
+	1    7350 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 1150 7550 1150
+Wire Wire Line
+	7200 1150 7200 800 
+Connection ~ 7500 800 
+Wire Wire Line
+	7550 1650 7500 1650
+Wire Wire Line
+	7500 1550 7500 2050
+Wire Wire Line
+	7500 1750 7550 1750
+Wire Wire Line
+	8900 2050 7500 2050
+Connection ~ 7500 1750
+Wire Wire Line
+	8550 2050 8550 1750
+Connection ~ 8050 2050
+Wire Wire Line
+	8550 1150 8950 1150
+Wire Wire Line
+	8550 1250 8600 1250
+Wire Wire Line
+	8600 1250 8600 1150
+Connection ~ 8600 1150
+$Comp
+L R R?
+U 1 1 59DC1D9B
+P 8750 1650
+F 0 "R?" V 8830 1650 50  0000 C CNN
+F 1 "R" V 8750 1650 50  0000 C CNN
+F 2 "" V 8680 1650 50  0001 C CNN
+F 3 "" H 8750 1650 50  0001 C CNN
+	1    8750 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 1650 8550 1650
+Wire Wire Line
+	8900 1450 8900 2050
+Connection ~ 8550 2050
+$Comp
+L R R?
+U 1 1 59DC2107
+P 8750 1350
+F 0 "R?" V 8800 1500 50  0000 C CNN
+F 1 "R" V 8750 1350 50  0000 C CNN
+F 2 "" V 8680 1350 50  0001 C CNN
+F 3 "" H 8750 1350 50  0001 C CNN
+	1    8750 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 1350 8550 1350
+Wire Wire Line
+	8900 1350 8900 1150
+Connection ~ 8900 1150
+Wire Wire Line
+	7550 1550 7500 1550
+Connection ~ 7500 1650
+Wire Wire Line
+	8550 1450 8900 1450
+Connection ~ 8900 1650
+$Comp
+L 4.19mmBananaJack J?
+U 1 1 59DC400B
+P 9700 950
+F 0 "J?" H 9700 800 60  0000 C CNN
+F 1 "4.19mmBananaJack" H 9700 1100 60  0000 C CNN
+F 2 "" H 9700 950 60  0001 C CNN
+F 3 "" H 9700 950 60  0001 C CNN
+	1    9700 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L 4.19mmBananaJack J?
+U 1 1 59DC40B4
+P 10150 950
+F 0 "J?" H 10150 800 60  0000 C CNN
+F 1 "4.19mmBananaJack" H 10150 1100 60  0000 C CNN
+F 2 "" H 10150 950 60  0001 C CNN
+F 3 "" H 10150 950 60  0001 C CNN
+	1    10150 950 
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
