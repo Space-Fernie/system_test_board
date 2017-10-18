@@ -1,4 +1,4 @@
-update=10/9/2017 4:32:21 PM
+update=2017-10-18 5:48:43 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=/home/david/Desktop/Link to Space Drive/Power/Test board/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -72,3 +62,13 @@ LibName30=valves
 LibName31=libraries/Computation
 LibName32=libraries/Sensors
 LibName33=libraries/Aleksandr
+[schematic_editor]
+version=1
+PageLayoutDescrFile=C:/Users/David/Documents/SpaceConcordia/cubesat_pcb_templates/draft_sheet_templates/kicad_layout_template.kicad_wks
+PlotDirectoryName=/home/david/Desktop/Link to Space Drive/Power/Test board/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
