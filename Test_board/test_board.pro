@@ -1,4 +1,4 @@
-update=2017-11-01 7:51:46 PM
+update=2017-11-08 6:14:53 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,16 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[schematic_editor]
-version=1
-PageLayoutDescrFile=space_kicad_layout_template.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [general]
 version=1
 [eeschema]
@@ -71,3 +61,13 @@ LibName29=valves
 LibName30=libraries/Aleksandr
 LibName31=libraries/Computation
 LibName32=libraries/Sensors
+[schematic_editor]
+version=1
+PageLayoutDescrFile=space_kicad_layout_template.kicad_wks
+PlotDirectoryName=C:/Users/David/Google Drive/Power/Arietta G25 Test board/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
