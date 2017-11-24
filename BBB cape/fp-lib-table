@@ -1,3 +1,6 @@
 (fp_lib_table
-  (lib (name Socket_BeagleBone_Black)(type KiCad)(uri "$(KIPRJMOD)\\Socket_BeagleBone_Black.pretty")(options "")(descr ""))
+  (lib (name Socket_BeagleBone_Black)(type KiCad)(uri "$(KIPRJMOD)/Socket_BeagleBone_Black.pretty")(options "")(descr ""))
+  (lib (name TO_SOT_Packages_SMD)(type KiCad)(uri "$(KISYSMOD)/TO_SOT_Packages_SMD.pretty")(options "")(descr ""))
+  (lib (name Resistors_SMD)(type KiCad)(uri "$(KISYSMOD)/Resistors_SMD.pretty")(options "")(descr ""))
+  (lib (name Capacitors_SMD)(type KiCad)(uri "$(KISYSMOD)/Capacitors_SMD.pretty")(options "")(descr ""))
 )
